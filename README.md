@@ -6,8 +6,11 @@ points of my master’s thesis
 
 # Related work
 Generative Adversarial Nets (GAN)
+
 Conditional GAN (CGAN)
+
 Cycle-Consistent Adversarial Networks (CycleGAN)
+
 PatchGAN
 
 # Conditional CycleGAN
