@@ -9,8 +9,10 @@ points of my master’s thesis
 
 [Conditional GAN (CGAN)](https://arxiv.org/abs/1411.1784)
 
-Cycle-Consistent Adversarial Networks (CycleGAN)
+[Cycle-Consistent Adversarial Networks (CycleGAN)](https://github.com/junyanz/CycleGAN)
 
-PatchGAN
+[PatchGAN](https://phillipi.github.io/pix2pix/)
 
 # Conditional CycleGAN
+
+
