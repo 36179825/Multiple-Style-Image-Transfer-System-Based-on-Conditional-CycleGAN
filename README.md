@@ -24,7 +24,7 @@ CCGAN 系統架構圖
 反向流程架構圖
 ![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/%E5%8F%8D%E5%90%91%E6%B5%81%E7%A8%8B%E6%9E%B6%E6%A7%8B%E5%9C%96.png)
 
-# CCGAN 系統架構
+# Conditional CycleGAN
 
 CCGAN的生成器架構類似CycleGAN，如圖十二所示，包含六層卷積層（Convolutional layer）和位於中間的五個殘差區塊（residual block）[28]（CycleGAN共使用九個殘差區塊），除最後一層以外，每個卷積層之後都有一層實例正規化（Instance Normalization）和線性整流函數（ReLU）當作激活函數（activation function），最後一層的激活函數是使用雙曲正切函數（tanh）。其中殘差區塊的目的是為了讓後面的層數也能學習到前面的特徵，並能縮短訓練的時間。
 判別器架構如圖十三所示，包含五層卷積層，除第一層及最後一層以外，每個卷積層之後都有一層批量正規化（Batch Normalization, BN）和線性整流函數（Leaky ReLU）當作激活函數，最後輸出為30*30大小的圖像塊（patch），利用多個數值來表示圖片的真偽。
@@ -37,7 +37,7 @@ discriminator
 
 ![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/discriminator.png)
 
-# 訓練概述
+# Training strategy
 
 一個可以在n種不同風格的圖片之間做轉換的CCGAN，我們稱為n-label CCGAN，包含兩個生成器G1、G2和n個判別器。n種風格之間的轉換，若也考慮同一種風格的轉換則總共有C(n, 2) + n = n(n+1)/2對風格的轉換，然而我們有更簡化的訓練程序，只要訓練n-1對風格的轉換就可以讓系統做所有n(n+1)/2對風格的轉換。假若n = 5總共就有5(5+1)/2 = 15對風格的轉換，而我們只要訓練5-1 = 4對風格的轉換就讓5-label CCGAN做15對風格的轉換了。
 
@@ -45,7 +45,7 @@ n種風格其一為照片。為了方便敘述令照片為第0種風格，其餘
 
 若一開始就將照片（風格0）和其它n-1種風格（風格1至n-1）之間的轉換一起訓練，會比較沒效率。因此我們首先對照片和其它每種風格的轉換分別用一個CCGAN網路單獨訓練，再將訓練好的n-1個網路權重值取平均。如式（三十三）所示，wi為單獨訓練照片和第i種風格之間的轉換得到的網路權重值，W為n-1對風格轉換分別單獨訓練後的權重平均值。接著再以W為初始權重值的CCGAN網路，一起循環訓練n-1對風格的轉換。如此不只能加速訓練，而且可以得到較好的轉換結果。
 
-# 部分實驗結果
+# Experimental results
 
 一、照片轉換成其它風格之結果，每一列由左至右編號為a到d。
 
