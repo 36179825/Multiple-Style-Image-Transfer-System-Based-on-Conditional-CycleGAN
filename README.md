@@ -47,7 +47,7 @@ n種風格其一為照片。為了方便敘述令照片為第0種風格，其餘
 
 # 部分實驗結果
 
-照片轉換成其它風格之結果，每一列由左至右編號為a到d。
+一、照片轉換成其它風格之結果，每一列由左至右編號為a到d。
 
 （a）原圖；（b）梵谷風格；（c）莫內風格；（d）浮世繪風格 
 
@@ -56,7 +56,7 @@ n種風格其一為照片。為了方便敘述令照片為第0種風格，其餘
 ![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/3.PNG)
 
 
-風格影像轉照片，每一列由左至右編號為a到d。
+二、風格影像轉照片，每一列由左至右編號為a到d。
 
 （a）、（c）原圖；（b）、（d）結果
 
@@ -71,3 +71,44 @@ n種風格其一為照片。為了方便敘述令照片為第0種風格，其餘
 浮世繪轉照片
 
 ![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/6.PNG)
+
+三、畫作風格之間的轉換結果，每一列由左至右編號為a到d。
+
+（a）、（c）原圖；（b）、（d）結果
+
+梵谷→莫內
+
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/7.PNG)
+
+梵谷→浮世繪
+
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/8.PNG)
+
+莫內→梵谷
+
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/9.PNG)
+
+莫內→浮世繪
+
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/10.PNG)
+
+浮世繪→梵谷
+
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/11.PNG)
+
+浮世繪→莫內
+
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/12.PNG)
+
+四、未訓練的風格轉換至訓練風格的結果
+
+（a）原圖；（b）梵谷風格；（c）莫內風格；（d）浮世繪風格；（e）照片風格
+
+塞尚畫作之風格轉換結果
+
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/13.PNG)
+
+水墨畫作之風格轉換結果
+
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/13.PNG)
+
