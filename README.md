@@ -46,6 +46,6 @@ n種風格其一為照片。為了方便敘述令照片為第0種風格，其餘
 # 部分實驗結果
 
 照片轉換成其它風格之結果，每一列由左至右編號為a到d。（a）原圖；（b）梵谷風格；（c）莫內風格；（d）浮世繪風格 
-![image]()
-![image]()
-![image]()
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/1.PNG)
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/2.PNG)
+![image](https://github.com/36179825/Multiple-Style-Image-Transfer-System-Based-on-Conditional-CycleGAN/blob/master/3.PNG)
